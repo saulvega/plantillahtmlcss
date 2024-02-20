@@ -1,0 +1,130 @@
+/* Estilos para el contenedor principal */
+.contenidoV {
+    max-width: 1200px; /* Ancho máximo */
+    margin: auto; /* Centrado horizontal */
+    display: flex; /* Flexbox */
+    flex-wrap: wrap; /* Ajuste de envoltura */
+    align-items: flex-start; /* Alineación de elementos al inicio */
+    gap: 20px; /* Espacio entre elementos */
+    margin-top: 90px; /* Margen superior */
+    background-color: #f2f2f2; /* Color de fondo */
+    border-radius: 15px; /* Borde redondeado */
+    padding: 20px; /* Relleno */
+    text-align: center; /* Alineación del texto al centro */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9); /* Sombra */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Estilos para el contenido principal del video */
+.main-video-contenidoV {
+    flex: 1 1 700px; /* Flexbox */
+    background-color: #fff; /* Color de fondo */
+    padding: 15px; /* Relleno */
+}
+
+/* Estilos para el video principal */
+.main-video {
+    margin-bottom: 7px; /* Margen inferior */
+    width: 100%; /* Ancho completo */
+}
+
+/* Estilos para el título del video principal */
+.main-vid-title {
+    font-size: 25px; /* Tamaño de fuente */
+    color: black; /* Color del texto */
+}
+
+/* Estilos para la descripción del video */
+.description {
+    text-align: start; /* Alineación del texto a la izquierda */
+}
+
+/* Estilos para la lista de videos */
+.video-list-contenidoV {
+    flex: 1 1 300px; /* Flexbox */
+    border-left: 2px solid #eee; /* Borde izquierdo */
+    background-color: #fff; /* Color de fondo */
+    padding: 15px 15px 15px 35px; /* Relleno */
+}
+
+/* Estilos para los elementos de la lista de videos */
+.list {
+    display: flex; /* Flexbox */
+    align-items: center; /* Alineación de elementos */
+    gap: 15px; /* Espacio entre elementos */
+    padding: 10px; /* Relleno */
+    border: 1px solid #eee; /* Borde */
+    cursor: pointer; /* Cursor */
+    border-radius: 5px; /* Borde redondeado */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Estilos para el último elemento de la lista */
+.list:last-child {
+    margin-bottom: 0; /* Elimina el margen inferior */
+}
+
+/* Estilos para el elemento activo de la lista */
+.list.active {
+    background-color: #aa0000; /* Color de fondo */
+}
+
+/* Estilos para el título del elemento activo de la lista */
+.contenidoV .video-list-contenidoV .list.active .list-title {
+    color: #fff; /* Color del texto */
+}
+
+/* Estilos para el video de la lista */
+.list-video {
+    width: 100px; /* Ancho */
+    border-radius: 5px; /* Borde redondeado */
+}
+
+/* Estilos para el título de la lista */
+.list-title {
+    font-size: 17px; /* Tamaño de fuente */
+    color: #444; /* Color del texto */
+}
+
+/* Media queries para ajustar el diseño en diferentes tamaños de pantalla */
+
+/* Para pantallas con un ancho máximo de 1200px */
+@media (max-width:1200px) {
+    .contenidoV {
+        margin: 0; /* Elimina el margen */
+        margin-top: 90px; /* Margen superior */
+    }
+    .video-list-contenidoV {
+        border: none !important; /* Elimina el borde */
+        padding: 15px !important; /* Relleno */
+    }
+}
+
+/* Para pantallas con un ancho máximo de 450px */
+@media (max-width:450px) {
+    .video-list-contenidoV {
+        border: none !important; /* Elimina el borde */
+        padding: 15px !important; /* Relleno */
+    }
+    .main-vid-title {
+        font-size: 15px; /* Tamaño de fuente */
+        text-align: center; /* Alineación del texto al centro */
+    }
+    .list {
+        flex-flow: column; /* Columna de elementos */
+        gap: 10px; /* Espacio entre elementos */
+    }
+    .list-video {
+        width: 100%; /* Ancho completo */
+    }
+    .list-title {
+        font-size: 15px; /* Tamaño de fuente */
+        text-align: center; /* Alineación del texto al centro */
+    }
+    .description {
+        font-size: 12px; /* Tamaño de fuente */
+    }
+    strong {
+        font-size: 12px; /* Tamaño de fuente */
+    }
+}

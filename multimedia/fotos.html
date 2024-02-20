@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UES</title>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- estilos principales -->
+    <link rel="stylesheet" href="../css/fotos.css"> <!-- estilo para la galeria de fotos -->
+    <!-- Iconos y estilos externos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fuentes de Google -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <!-- Icono de la página -->
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header class="header">
+        <!-- menú superior -->
+        <div class="logo"><img src="../images/ues.png" alt="logo" class="logos"></div>
+        <div class="logo"><img src="../images/ues.png" alt="logo" class="logos"></div>
+        <div class="logo"><img src="../images/ues.png" alt="logo" class="logos"></div>
+        <input type="checkbox" id="toggle">
+        <label for="toggle"><img class="menu" src="../images/menu.png" alt="menu"></label>
+        <nav class="navigation">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/proyecto.html">Descripción del proyecto</a></li>
+                <li><a href="../pages/investigadores.html">Investigadores</a></li>
+                <li><a href="#">Multimedia</a>
+                    <ul>
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="fotos.html">Galeria de fotos</a></li>
+                    </ul>
+                </li>
+                <li><a href="../pages/noticias.html">Noticias</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+                <li><a href="../pages/archivo.html">Archivos</a></li>
+                <div class="contenedor">
+                    <a href="https://www.youtube.com/@TVUES" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/UESoficial.SV" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/UESoficial" target="_blank" class="twitter-link">
+                        <img src="/images/twitter-x.svg" alt="Twitter" class="twitter-icon">
+                    </a>
+                    <a href="https://www.instagram.com/uesoficial" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <!-- galeria de imagenes -->
+        <div class="tituloG"></div>
+        <!-- titulo -->
+        <h2 class="galeria-titulo">Galeria de imagenes</h2>
+        <div class="gallery">
+            <!-- titulo de la imagen, descripcion e imagen. Ubicacion de las imagenes image/galeria-->
+            <div class="gallery-item" data-title="Imagen 1" 
+                data-description="Descripción de la imagen  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quod! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quod! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quod!">
+                <img src="image/fondo1.avif" alt="Imagen 2">
+            </div>
+            <div class="gallery-item" data-title="Imagen 2"
+                data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quod!">
+                <img src="image/Fondo2.avif" alt="Imagen 2">
+            </div>
+            <div class="gallery-item" data-title="Imagen 3" data-description=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quod! Lorem ipsum dolor
+                sit amet consectetur    adipisicing elit. Sed, quod! Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Sed, quod!Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quod!Lorem 
+                ipsum dolor sit amet consectetur adipisicing elit. Sed, quod!Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sed, quod">
+                <img src="image/fondo3.png" alt="Imagen 3">
+            </div>
+            <div class="gallery-item" data-title="Imagen 4"
+                data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quod!">
+                <img src="image/fondo4.jpg" alt="Imagen 4">
+            </div>
+            <div class="gallery-item" data-title="Imagen 5"
+                data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quod!">
+                <img src="image/fondo5.avif" alt="Imagen 5">
+            </div>
+            <div class="gallery-item" data-title="Imagen 6"
+                data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quod!">
+                <img src="image/fondo1.avif" alt="Imagen 6">
+            </div>
+            <div class="gallery-item" data-title="Imagen 7"
+                data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quod!">
+                <img src="image/fondo3.png" alt="Imagen 7">
+            </div>
+            <div class="gallery-item" data-title="Imagen 8"
+                data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quod!">
+                <img src="image/fondo4.jpg" alt="Imagen 8">
+            </div>
+            <div class="gallery-item" data-title="Imagen 9"
+                data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quod!">
+                <img src="image/fondo5.avif" alt="Imagen 9">
+            </div>
+            <div class="gallery-item" data-title="Imagen 10"
+                data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quod!">
+                <img src="image/fondo1.avif" alt="Imagen 10">
+            </div>
+            <div class="gallery-item" data-title="Imagen 11"
+                data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quod!">
+                <img src="image/Fondo2.avif" alt="Imagen 11">
+            </div>
+        </div>
+        <!-- modal donde mostrara la imagen, titulo y descripcion -->
+        <div id="modal" class="modal">
+            <span class="close">&times;</span>
+            <div class="modal-content">
+                <img id="modal-image">
+                <div id="modal-text">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-description"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- pie de pagina -->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="../images/ues.png" alt="logo">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, sed?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, sed?
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, sed?
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, sed?
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, sed?
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, sed?
+                </p>
+            </div>
+            <div class="box">
+                <h2>DIRECCION</h2>
+                <div class="direccion">
+                    <p>Ciudad Universitaria "Dr. Fabio Castillo Figueroa",
+                        Final Avenida "Mártires Estudiantes del 30 julio", San Salvador,
+                        El Salvador, América Central. <br><br><b>Teléfonos: <br>+(503) numero de telefono <br>+(503)
+                            numero de telefono</b></p>
+                    <a href="#">DERECHOS</a>
+                    <a href="../pages/contacto.html">CONTACTO</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>UES</b> - Todos los Derechos Reservados.</small>
+
+        </div>
+    </footer>
+    <!-- scripts -->
+    <script src="../js/fotos.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

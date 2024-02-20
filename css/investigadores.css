@@ -1,0 +1,176 @@
+/* Estilo para la sección de investigadores */
+.investigadores {
+    margin-top: 70px; /* Margen superior */
+    background-color: #f2f2f2; /* Color de fondo */
+    border-radius: 10px; /* Radio de borde */
+    padding: 20px; /* Relleno */
+    text-align: center; /* Alineación del texto */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8); /* Sombra */
+}
+
+/* Estilo para el contenedor de los sliders */
+.slide-container {
+    max-width: 1120px; /* Ancho máximo */
+    width: 100%; /* Ancho */
+    padding: 40px 0; /* Relleno */
+}
+
+/* Estilo para el contenido del slider */
+.slide-content {
+    margin: 0 40px; /* Margen */
+    overflow: hidden; /* Ocultar desbordamiento */
+    border-radius: 25px; /* Radio de borde */
+}
+
+/* Estilo para las tarjetas */
+.card {
+    border-radius: 25px; /* Radio de borde */
+    background-color: #FFF; /* Color de fondo */
+}
+
+/* Estilo para el contenido de las imágenes y las tarjetas */
+.image-content,
+.card-content {
+    display: flex; /* Mostrar como flexbox */
+    flex-direction: column; /* Dirección de la columna */
+    align-items: center; /* Alineación vertical al centro */
+    padding: 10px 14px; /* Relleno */
+}
+
+/* Estilo para el contenido de las imágenes */
+.image-content {
+    position: relative; /* Posición relativa */
+    row-gap: 5px; /* Espacio entre filas */
+    padding: 25px 0; /* Relleno */
+}
+
+/* Estilo para la superposición */
+.overlay {
+    position: absolute; /* Posición absoluta */
+    left: 0; /* Desde la izquierda */
+    top: 0; /* Desde la parte superior */
+    height: 100%; /* Altura */
+    width: 100%; /* Ancho */
+    background-color: #4070F4; /* Color de fondo */
+    border-radius: 25px 25px 0 25px; /* Radio de borde */
+}
+
+/* Estilo para los pseudoelementos ::before y ::after de la superposición */
+.overlay::before,
+.overlay::after {
+    content: ''; /* Contenido */
+    position: absolute; /* Posición absoluta */
+    right: 0; /* Desde la derecha */
+    bottom: -40px; /* Desde la parte inferior */
+    height: 40px; /* Altura */
+    width: 40px; /* Ancho */
+    background-color: #4070F4; /* Color de fondo */
+}
+
+/* Estilo para el pseudoelemento ::after de la superposición */
+.overlay::after {
+    border-radius: 0 25px 0 0; /* Radio de borde */
+    background-color: #FFF; /* Color de fondo */
+}
+
+/* Estilo para la imagen de la tarjeta */
+.card-image {
+    position: relative; /* Posición relativa */
+    height: 150px; /* Altura */
+    width: 150px; /* Ancho */
+    border-radius: 50%; /* Radio de borde */
+    background: #FFF; /* Color de fondo */
+    padding: 3px; /* Relleno */
+}
+
+/* Estilo para la imagen dentro de la tarjeta */
+.card-image .card-img {
+    height: 100%; /* Altura */
+    width: 100%; /* Ancho */
+    object-fit: cover; /* Ajuste de la imagen */
+    border-radius: 50%; /* Radio de borde */
+    border: 4px solid #4070F4; /* Borde */
+}
+
+/* Estilo para el nombre */
+.name {
+    font-size: 18px; /* Tamaño de fuente */
+    font-weight: 500; /* Peso de la fuente */
+    color: #333; /* Color del texto */
+}
+
+/* Estilo para la descripción */
+.description {
+    font-size: 14px; /* Tamaño de fuente */
+    color: #707070; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+}
+
+/* Estilo para el botón */
+.button {
+    border: none; /* Sin borde */
+    font-size: 16px; /* Tamaño de fuente */
+    color: #FFF; /* Color del texto */
+    padding: 8px 16px; /* Relleno */
+    background-color: #4070F4; /* Color de fondo */
+    border-radius: 6px; /* Radio de borde */
+    margin: 14px; /* Margen */
+    cursor: pointer; /* Cursor */
+    transition: all 0.3s ease; /* Transición */
+}
+
+/* Estilo al pasar el mouse sobre el botón */
+.button:hover {
+    background: #265DF2; /* Cambio de color de fondo */
+}
+
+/* Estilo para los botones de navegación del slider */
+.swiper-navBtn {
+    color: #6E93f7; /* Color del texto */
+    transition: color 0.3s ease; /* Transición */
+}
+
+/* Estilo al pasar el mouse sobre los botones de navegación del slider */
+.swiper-navBtn:hover {
+    color: #4070F4; /* Cambio de color del texto */
+}
+
+/* Estilo para los pseudoelementos ::before y ::after de los botones de navegación del slider */
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+    font-size: 35px; /* Tamaño de fuente */
+}
+
+/* Estilo para el botón de siguiente del slider */
+.swiper-button-next {
+    right: 0; /* Desde la derecha */
+}
+
+/* Estilo para el botón de anterior del slider */
+.swiper-button-prev {
+    left: 0; /* Desde la izquierda */
+}
+
+/* Estilo para los puntos de paginación del slider */
+.swiper-pagination-bullet {
+    background-color: #6E93f7; /* Color de fondo */
+    opacity: 1; /* Opacidad */
+}
+
+/* Estilo para el punto activo de la paginación del slider */
+.swiper-pagination-bullet-active {
+    background-color: #4070F4; /* Color de fondo */
+}
+
+/* Media query para pantallas con un ancho máximo de 768px */
+@media screen and (max-width: 768px) {
+    /* Estilo para el contenido del slider en dispositivos móviles */
+    .slide-content {
+        margin: 0 10px; /* Margen */
+    }
+
+    /* Ocultar los botones de navegación del slider en dispositivos móviles */
+    .swiper-navBtn {
+        display: none; /* Ocultar */
+    }
+}

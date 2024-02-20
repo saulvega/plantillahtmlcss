@@ -1,0 +1,89 @@
+/* Estilo para los botones indicadores del carrusel */
+.carousel-indicators button {
+    width: 8px; /* Ancho */
+    height: 8px; /* Altura */
+    border-radius: 50%; /* Radio de borde para hacerlos circulares */
+    margin: 0 4px; /* Margen */
+}
+
+/* Estilo para el contenido del carrusel */
+.carousel-content {
+    position: absolute; /* Posición absoluta */
+    top: 10px; /* Desde arriba */
+    left: 18%; /* Desde la izquierda */
+    transform: translateX(-50%); /* Transformación para centrar horizontalmente */
+    background-color: rgba(255, 255, 255, 0.8); /* Color de fondo */
+    padding: 15px; /* Relleno */
+    max-width: 400px; /* Ancho máximo */
+    text-align: center; /* Alineación del texto */
+}
+
+/* Estilo para el título dentro del contenido del carrusel */
+.carousel-content h1 {
+    margin-bottom: 10px; /* Margen inferior */
+    background-color: rgba(1, 1, 1, 0.2); /* Color de fondo */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .35); /* Sombra */
+    color: white; /* Color del texto */
+    overflow: hidden; /* Ocultar desbordamiento */
+    text-overflow: ellipsis; /* Ellipsis para texto largo */
+    white-space: nowrap; /* No envolver el texto */
+    height: auto; /* Altura automática */
+}
+
+/* Estilo para el botón dentro del contenido del carrusel */
+.carousel-content a.btn {
+    display: inline-block; /* Mostrar como bloque en línea */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .45); /* Sombra */
+    margin-top: 5px; /* Margen superior */
+}
+
+/* Estilo para la imagen dentro del carrusel de noticias */
+.carousel-noticias .carousel-item img {
+    max-width: 100%; /* Ancho máximo */
+    max-height: 400px; /* Altura máxima */
+}
+
+/* Estilo para el contenedor principal */
+.containerN {
+    max-width: 80%; /* Ancho máximo */
+    margin-left: auto; /* Margen izquierdo automático */
+    margin-right: auto; /* Margen derecho automático */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    border-radius: 10px; /* Radio de borde */
+    border-top-left-radius: 0; /* Radio de borde de la esquina superior izquierda */
+    border-top-right-radius: 0; /* Radio de borde de la esquina superior derecha */
+    border-bottom-left-radius: 0; /* Radio de borde de la esquina inferior izquierda */
+    border-bottom-right-radius: 0; /* Radio de borde de la esquina inferior derecha */
+}
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 1280px) {
+    /* Estilo para el contenido del carrusel en pantallas más pequeñas */
+    .carousel-content {
+        max-width: 90%; /* Ancho máximo */
+        left: 18%; /* Posición lateral */
+    }
+
+    /* Estilo para el título del contenido del carrusel en pantallas más pequeñas */
+    .carousel-content h1 {
+        font-size: 16px; /* Tamaño de fuente */
+    }
+
+    /* Estilo para el botón del contenido del carrusel en pantallas más pequeñas */
+    .carousel-content a.btn {
+        font-size: 14px; /* Tamaño de fuente */
+    }
+
+    /* Estilo para el botón de tamaño pequeño del contenido del carrusel en pantallas más pequeñas */
+    .carousel-content a.btn.btn-sm {
+        padding: 5px 10px; /* Relleno */
+    }
+}
+
+@media screen and (max-width: 720px) {
+    /* Estilo para el contenido del carrusel en pantallas aún más pequeñas */
+    .carousel-content {
+        max-width: 90%; /* Ancho máximo */
+        left: 50%; /* Posición lateral para centrar completamente */
+    }
+}

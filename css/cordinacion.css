@@ -1,0 +1,169 @@
+/* Estilo para el contenedor principal */
+.contenedorC {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EFEFEF; /* Color de fondo */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Fuente */
+    margin-top: -70px; /* Margen superior negativo */
+}
+
+/* Estilo para el contenedor de los slides */
+.slide-container {
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0; /* Relleno superior e inferior */
+}
+
+/* Estilo para el contenido de los slides */
+.slide-content {
+    margin: 0 40px; /* Margen izquierdo y derecho */
+    overflow: hidden;
+    border-radius: 25px; /* Borde redondeado */
+}
+
+/* Estilo para las tarjetas */
+.card {
+    border-radius: 25px; /* Borde redondeado */
+    background-color: #FFF; /* Color de fondo */
+}
+
+/* Estilo para el contenido de la imagen y la tarjeta */
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px; /* Relleno */
+}
+
+/* Estilo para el contenido de la imagen */
+.image-content {
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0; /* Relleno superior e inferior */
+}
+
+/* Estilo para la superposición */
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #48aca4; /* Color de fondo */
+    border-radius: 25px 25px 0 25px; /* Borde redondeado */
+}
+
+/* Estilo para el antes y el después de la superposición */
+.overlay::before,
+.overlay::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #48aca4; /* Color de fondo */
+}
+
+.overlay::after {
+    border-radius: 0 25px 0 0;
+    background-color: #FFF; /* Color de fondo */
+}
+
+/* Estilo para la imagen de la tarjeta */
+.card-image {
+    position: relative;
+    height: 170px; /* Altura */
+    width: 170px; /* Ancho */
+    border-radius: 50%; /* Borde redondeado */
+    background: white; /* Color de fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 3px; /* Relleno */
+}
+
+/* Estilo para la imagen de la tarjeta */
+.card-image .card-img {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #48aca4; /* Borde */
+}
+
+/* Estilo para el nombre */
+.name {
+    font-size: 18px; /* Tamaño de fuente */
+    font-weight: 500; /* Peso de la fuente */
+    color: #333; /* Color */
+}
+
+/* Estilo para la descripción */
+.description {
+    font-size: 14px; /* Tamaño de fuente */
+    color: #707070; /* Color */
+    text-align: center; /* Alineación de texto */
+}
+
+/* Estilo para el botón al pasar el mouse */
+.button:hover {
+    background: #48aca4; /* Color de fondo */
+}
+
+/* Estilo para los botones de navegación del swiper */
+.swiper-navBtn {
+    color: #48aca4; /* Color */
+    transition: color 0.3s ease; /* Transición */
+}
+
+/* Estilo para los botones de navegación del swiper al pasar el mouse */
+.swiper-navBtn:hover {
+    color: #48aca4; /* Color */
+}
+
+/* Estilo para los botones de navegación del swiper antes y después */
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+    font-size: 35px; /* Tamaño de fuente */
+}
+
+/* Estilo para el botón de siguiente del swiper */
+.swiper-button-next {
+    right: 0;
+}
+
+/* Estilo para el botón de anterior del swiper */
+.swiper-button-prev {
+    left: 0;
+}
+
+/* Estilo para los puntos de paginación del swiper */
+.swiper-pagination-bullet {
+    background-color: #48aca4; /* Color de fondo */
+    opacity: 1; /* Opacidad */
+}
+
+/* Estilo para el punto de paginación activo del swiper */
+.swiper-pagination-bullet-active {
+    background-color: #48aca4; /* Color de fondo */
+}
+
+/* Media query para dispositivos con pantalla de hasta 768px de ancho */
+@media screen and (max-width: 768px) {
+    /* Estilo para el contenido del slide */
+    .slide-content {
+        margin: 0 10px; /* Margen izquierdo y derecho */
+    }
+
+    /* Ocultar los botones de navegación del swiper */
+    .swiper-navBtn {
+        display: none;
+    }
+}

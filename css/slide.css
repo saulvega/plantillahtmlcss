@@ -1,0 +1,178 @@
+/* Estilos para el contenedor del carrusel */
+.carousel {
+    width: 100%; 
+    margin: 90px auto;
+    overflow: hidden; 
+}
+/* Estilos para las imágenes dentro de los elementos del carrusel */
+.carousel .carousel-inner .carousel-item img {
+    height: 600px; 
+    width: 100%; 
+    object-fit: cover; 
+}
+
+/* Estilos para las columnas de tamaño mediano */
+.col-md-4{
+    margin-top: 75px;
+}
+
+
+/* Estilos para el contenedor general */
+.container {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px; 
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-top: 60px;
+    max-width: 80%;
+
+}
+/* Estilos para el contenedor con clase "containerC" */
+.containerC {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    max-width: 80%;
+    margin-left: 10%;
+    position: relative;
+    text-align: center;
+}
+/* Estilos para el contenedor con clase "contenedorC" */
+.contenedorC {
+    position: relative; /* Establece posición relativa para permitir la posición absoluta del título */
+    padding-top: 100px; /* Aumenta el espacio superior para el título */
+    min-height: 500px; /* Ajusta la altura mínima del contenedor */
+}
+/* Estilos para el título con clase "cordinacion-titulo" */
+.cordinacion-titulo {
+    color: white;
+    top: 0; /* Alinea el título con el borde superior del contenedor */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #b00404;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+    z-index: 1;
+    margin-left: 500px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+p{
+    color: black;
+}
+
+
+/* Para pantallas con un ancho máximo de 950px */
+@media (max-width: 950px) {
+    .carousel {
+        width: 90%; 
+    }
+
+    .carousel .carousel-inner .carousel-item img {
+        max-height: 200px; 
+    }
+    .col-md-4{
+        margin-top: 5px;
+    }
+    .cordinacion-titulo {
+        color: white;
+        top: 0; /* Alinea el título con el borde superior del contenedor */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #b00404;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+        z-index: 1;
+        margin-left: 300px;
+        margin-bottom: 30px;
+    }
+}
+/* Media queries adicionales para otros tamaños de pantalla */
+@media (max-width: 1130px){
+    .cordinacion-titulo {
+        color: white;
+        top: 0; /* Alinea el título con el borde superior del contenedor */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #b00404;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+        z-index: 1;
+        margin-left: 340px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 720px){
+    .cordinacion-titulo {
+        color: white;
+        top: 0; /* Alinea el título con el borde superior del contenedor */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #b00404;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+        z-index: 1;
+        margin-left: 270px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 620px){
+    .cordinacion-titulo {
+        color: white;
+        top: 0; /* Alinea el título con el borde superior del contenedor */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #b00404;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+        z-index: 1;
+        margin-left: 220px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 570px){
+    .cordinacion-titulo {
+        color: white;
+        top: 0; /* Alinea el título con el borde superior del contenedor */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #b00404;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+        z-index: 1;
+        margin-left: 130px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 360px){
+    .cordinacion-titulo {
+        color: white;
+        top: 0; /* Alinea el título con el borde superior del contenedor */
+        left: 40%;
+        transform: translateX(-15%);
+        background-color: #b00404;
+        padding: 7px 10px;
+        border-radius: 1px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+        z-index: 1;
+        margin-left: 45px;
+        margin-bottom: 30px;
+    }
+}

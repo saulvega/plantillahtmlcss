@@ -1,0 +1,100 @@
+/* Estilo para el título de la galería */
+.galeria-titulo {
+    text-align: center; /* Alineación del texto */
+    position: relative; /* Posición relativa */
+    width: 80%; /* Ancho */
+    margin: 50px auto; /* Margen */
+    color: #fff; /* Color del texto */
+}
+
+/* Estilo para el pseudo-elemento ::before del título de la galería */
+.galeria-titulo::before {
+    content: ""; /* Contenido */
+    display: block; /* Mostrar como bloque */
+    width: 100%; /* Ancho */
+    height: 2px; /* Altura */
+    position: absolute; /* Posición absoluta */
+    background-color: #b00404; /* Color de fondo */
+    top: 50%; /* Posicionamiento desde la parte superior */
+    z-index: -1; /* Índice z */
+}
+
+/* Estilo para la parte resaltada del título de la galería */
+.galeria-titulo span {
+    padding: 0 15px; /* Relleno */
+    background-color: #b00404; /* Color de fondo */
+}
+
+/* Estilo para el cuerpo del documento */
+body {
+    background-color: #ecf4fb; /* Color de fondo */
+}
+
+/* Estilo para la galería de imágenes */
+.img-gallery {
+    width: 80%; /* Ancho */
+    margin: 0 auto 50px; /* Margen */
+    display: grid; /* Mostrar como cuadrícula */
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Definición de columnas */
+    gap: 30px; /* Espacio entre elementos */
+}
+
+/* Estilo para las imágenes de la galería */
+.img-gallery img {
+    width: 100%; /* Ancho */
+    height: 200px; /* Altura */
+    object-fit: cover; /* Ajuste de la imagen */
+    cursor: pointer; /* Cursor */
+    transition: 1s; /* Transición */
+}
+
+/* Estilo al pasar el mouse sobre las imágenes de la galería */
+.img-gallery img:hover {
+    transform: scale(1.2); /* Escalar */
+}
+
+/* Estilo para la imagen a pantalla completa */
+.ful-img {
+    width: 100%; /* Ancho */
+    height: 100vh; /* Altura de la ventana */
+    background-color: rgba(0, 0, 0, 0.9); /* Color de fondo */
+    position: fixed; /* Posición fija */
+    top: 0; /* Desde la parte superior */
+    left: 0; /* Desde la parte izquierda */
+    display: none; /* Ocultar */
+    align-items: center; /* Alinear elementos */
+    justify-content: center; /* Justificar elementos */
+    z-index: 99; /* Índice z */
+}
+
+/* Estilo para el botón de cerrar la imagen a pantalla completa */
+.ful-img span {
+    position: absolute; /* Posición absoluta */
+    top: 15%; /* Desde la parte superior */
+    right: 20%; /* Desde la parte derecha */
+    font-size: 30px; /* Tamaño de fuente */
+    color: #fff; /* Color del texto */
+    cursor: pointer; /* Cursor */
+}
+
+/* Estilo para la imagen a pantalla completa */
+.ful-img img {
+    width: 90%; /* Ancho */
+    max-width: 600px; /* Ancho máximo */
+}
+
+/* Media query para pantallas con un ancho máximo de 400px */
+@media screen and (max-width:400px){
+    /* Estilo para el título de la galería en dispositivos móviles */
+    .galeria-titulo {
+        text-decoration: underline; /* Subrayado */
+    }
+    /* Ocultar el pseudo-elemento ::before en dispositivos móviles */
+    .galeria-titulo::before {
+        display: none; /* Ocultar */
+    }
+    /* Estilo para la parte resaltada del título de la galería en dispositivos móviles */
+    .galeria-titulo span {
+        padding: 0; /* Sin relleno */
+    }
+}

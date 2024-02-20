@@ -1,0 +1,67 @@
+/* Estilos para el contenedor central */
+.central-box {
+    margin-top: 70px; /* Espacio superior de 70px */
+    background-color: #f2f2f2; /* Color de fondo */
+    border-radius: 10px; /* Borde redondeado */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto al centro */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8); /* Sombra */
+}
+
+/* Estilos para el título dentro del contenedor central */
+.central-box h2 {
+    color: #333; /* Color del texto */
+}
+
+/* Estilos para el párrafo dentro del contenedor central */
+.central-box p {
+    color: #666; /* Color del texto */
+}
+
+/* Estilos adicionales para los párrafos dentro del contenedor central */
+.central-box .p {
+    margin-top: 5px; /* Margen superior de 5px */
+}
+
+/* Media queries para ajustar el diseño en diferentes tamaños de pantalla */
+
+/* Para pantallas con un ancho máximo de 1400px */
+@media (max-width: 1400px) {
+    .d-flex {
+        flex-direction: column; /* Cambio a disposición en columna */
+        margin-left: 30%; /* Margen izquierdo del 30% */
+    }
+}
+
+/* Para pantallas con un ancho máximo de 991px */
+@media (max-width: 991px) {
+    .d-flex {
+        flex-direction: column; /* Cambio a disposición en columna */
+        margin-left: 20%; /* Margen izquierdo del 20% */
+    }
+}
+
+/* Para pantallas con un ancho máximo de 840px */
+@media (max-width: 840px) {
+    .d-flex {
+        flex-direction: column; /* Cambio a disposición en columna */
+        margin-left: 15%; /* Margen izquierdo del 15% */
+    }
+}
+
+/* Para pantallas con un ancho máximo de 600px */
+@media (max-width: 600px) {
+    .d-flex {
+        flex-direction: column; /* Cambio a disposición en columna */
+        margin-left: 10%; /* Margen izquierdo del 10% */
+    }
+}
+
+/* Para pantallas con un ancho máximo de 390px */
+@media (max-width: 390px) {
+    .d-flex {
+        flex-direction: column; /* Cambio a disposición en columna */
+        margin-left: 0%; /* Margen izquierdo del 0% */
+        margin-right: 15%; /* Margen derecho del 15% */
+    }
+}

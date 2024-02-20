@@ -1,0 +1,587 @@
+/* Importación de la fuente Poppins desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+	/* Estilos para resetear el margin, padding y box-sizing en todos los elementos */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: #EFEFEF;
+    
+
+    .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .poppins-medium {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .poppins-semibold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .poppins-bold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+}
+/* Estilos para la cabecera */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(1, 1, 1, 0.9);
+    padding: 0px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+/* Estilos para el logotipo */
+.logo {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+}
+/* Estilos para la navegación */
+.navigation ul {
+    list-style: none;
+}
+
+.header .navigation ul li {
+    float: left;
+    position: relative;
+}
+
+.header .navigation ul li a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    transition: all .2s ease;
+}
+
+.header .navigation ul li a:hover {
+    background-color: red;
+}
+
+.header .navigation ul li ul {
+    position: absolute;
+    right: 0;
+    width: 300px;
+    background-color: rgba(1, 1, 1, 0.7);
+    display: none;
+}
+
+.header .navigation ul li ul li a {
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.header .navigation ul li ul li ul {
+    position: absolute;
+    top: 0;
+    right: 300px;
+
+}
+
+
+.header .navigation ul li ul li {
+    width: 100%;
+
+}
+
+.header .navigation ul li:hover>ul {
+    display: initial;
+}
+/* Estilos para el menú desplegable en pantallas pequeñas */
+#toggle,
+.header label {
+    display: none;
+    cursor: pointer;
+}
+
+.menu {
+    width: 45px;
+    height: 35px;
+}
+/* Media query para pantallas de hasta 950px */
+@media(max-width:950px) {
+    .header label {
+        display: initial;
+    }
+
+    .header {
+        padding: 20px 10%;
+    }
+
+    .header .navigation {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(1, 1, 1, 0.7);
+        display: none;
+    }
+
+    .header .navigation ul li {
+        width: 100%;
+
+    }
+
+    .header .navigation ul li a {
+        padding: 8px 30px 8px 10%;
+
+    }
+
+    .header .navigation ul li ul {
+        position: relative;
+        width: 100%;
+        left: 0;
+
+    }
+
+    .header .navigation ul li ul li {
+        background-color: rgba(1, 1, 1, 0.5);
+    }
+
+    .header .navigation ul li ul li ul {
+        position: relative;
+        width: 100%;
+        left: 0;
+
+    }
+
+    #toggle:checked~.navigation {
+        display: block;
+    }
+
+    .contenedor {
+        padding: 20px 2%;
+    }
+}
+/* Estilos para la sección de hero */
+.hero {
+    min-height: 100vh;
+    background-image: url("/images/hero.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Estilos para el contenedor */
+.contenedor {
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 92%;
+    transform: translate(-20%, -92%);
+}
+/* Estilos para los iconos */
+i {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin: 2px;
+    border-radius: 50%;
+    padding: 1px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .35);
+    transition: .3s ease;
+}
+/* Estilos para los enlaces de las redes sociales */
+.fa-youtube:hover {
+    background-color: red;
+    box-shadow: 0 0 15px red,
+        0 0 45px red,
+        0 0 75px red,
+        0 0 115px red;
+}
+
+.fa-facebook:hover {
+    background-color: blue;
+    box-shadow: 0 0 15px blue,
+        0 0 45px blue,
+        0 0 75px blue,
+        0 0 115px blue;
+}
+
+
+.twitter-link:hover .twitter-icon {
+    background-color: skyblue;
+    box-shadow: 0 0 15px skyblue,
+        0 0 45px skyblue,
+        0 0 75px skyblue,
+        0 0 115px skyblue;
+}
+/* Estilos para los enlaces */
+.contenedor a {
+    text-decoration: none; /* Quitar el subrayado */
+}
+/* Estilos para las imágenes en los enlaces */
+.twitter-icon {
+    width: 18px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+    background-color: white;
+    margin-bottom: 8px;
+}
+
+.fa-instagram:hover {
+    background-color: palevioletred;
+    box-shadow: 0 0 15px violet,
+        0 0 45px violet,
+        0 0 75px violet,
+        0 0 115px violet;
+}
+
+.logos {
+    width: 50px;
+    height: 50px;
+
+}
+
+.cards .card {
+    width: calc(23% - 15px);
+    /* Calcula el ancho de la tarjeta para que ocupe el 23% del contenedor y reste el espacio del margen */
+    margin-right: 15px;
+    /* Ajusta el margen derecho entre las tarjetas */
+    margin-left: 25px;
+}
+
+/* @media query para hacer las tarjetas responsive */
+@media (max-width: 992px) {
+    .cards .card {
+        width: calc(25% - 10px);
+        /* En pantallas medianas, ajusta el ancho de la tarjeta para que ocupe el 25% del contenedor y reste el espacio del margen */
+        margin-right: 10px;
+        /* Ajusta el margen derecho entre las tarjetas */
+        margin-left: 10px;
+        /* Ajusta el margen izquierdo entre las tarjetas */
+    }
+}
+
+@media (max-width: 768px) {
+    .cards .card {
+        width: calc(33.33% - 10px);
+        /* En pantallas pequeñas, ajusta el ancho de la tarjeta para que ocupe el 33.33% del contenedor y reste el espacio del margen */
+        margin-right: 10px;
+        /* Ajusta el margen derecho entre las tarjetas */
+        margin-left: 10px;
+        /* Ajusta el margen izquierdo entre las tarjetas */
+    }
+}
+
+@media (max-width: 576px) {
+    .cards .card {
+        width: 100%;
+        /* En pantallas extra pequeñas, ajusta el ancho de la tarjeta para que ocupe el 100% del contenedor */
+        margin-right: 0;
+        /* Elimina el margen derecho entre las tarjetas */
+        margin-left: 0;
+        /* Elimina el margen izquierdo entre las tarjetas */
+        margin-bottom: 20px;
+        /* Agrega espacio entre las tarjetas */
+    }
+}
+
+
+.progress {
+    max-width: 250px;
+    
+}
+
+/* Estilos para el contenedor de progreso */
+.containerP {
+    background-color: #fff;
+    height: 300px;
+    width: 250px;
+    position: relative;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 40%;
+    
+}
+
+.svg {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+
+}
+
+.box_percentage {
+    height: 250px;
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.percentage {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: var(--color1);
+}
+
+.progress2 {
+    fill: none;
+    stroke-width: 15;
+    stroke: rgb(255, 255, 255);
+
+}
+
+.progress1 {
+    fill: none;
+    stroke-width: 15;
+    stroke: var(--color1);
+    transform: rotate(-90deg);
+    transform-origin: center;
+    stroke-linecap: round;
+    stroke-dasharray: 630;
+    stroke-dashoffset: 630;
+    transition: .3s;
+}
+
+.title {
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: .8em;
+    color: var(--color1);
+    font-weight: bold;
+
+}
+
+:root {
+    --color1: #48aca4;
+}
+/* Estilos para el contenedor de progreso */
+.progress-container {
+    max-width: 250px;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+
+.progress {
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.progress-bar {
+    height: 100%;
+    line-height: 20px;
+    color: black;
+    text-align: center;
+    background-color: var(--color1);
+    transition: width 0.3s ease;
+}
+
+.dots {
+    position: absolute;
+    animation: dots 1s infinite;
+
+}
+
+@keyframes dots {
+    0% {
+        content: "";
+    }
+    25% {
+        content: ".";
+    }
+    50% {
+        content: "..";
+    }
+    75% {
+        content: "...";
+    }
+}
+
+@media (max-width: 920px) {
+    .progress-container,
+    .containerP {
+        margin-left: 225px; /* Cambia el margen izquierdo a 5px en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 755px) {
+    .progress-container,
+    .containerP {
+        margin-left: 125px; /* Cambia el margen izquierdo a 5px en pantallas más pequeñas */
+    }
+}
+@media (max-width: 440px) {
+    .progress-container,
+    .containerP {
+        margin-left: 85px; /* Cambia el margen izquierdo a 5px en pantallas más pequeñas */
+    }
+}
+@media (max-width: 400px) {
+    .progress-container,
+    .containerP {
+        margin-left: 70px; /* Cambia el margen izquierdo a 5px en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 300px) {
+    .progress-container,
+    .containerP {
+        margin-left: 0; /* Cambia el margen izquierdo a 0 en pantallas aún más pequeñas */
+    }
+}
+/* Estilos para el pie de página */
+.pie-pagina {
+    width: 100%;
+    background-color: #0a141d;
+}
+/* Estilos para el grupo 1 en el pie de página */
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+	/* Estilos para las cajas en el pie de página */
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 240px;
+    height: 280px;
+    margin-left: -200px; /* Este margen puede causar problemas en dispositivos pequeños */
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .direccion a {
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 5px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .direccion a:hover {
+    color: aqua;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+/* Estilos para el grupo 2 en el pie de página */
+.pie-pagina .grupo-2 small {
+    font-size: 18px;
+}
+
+/* Media queries para pantallas más pequeñas */
+@media screen and (max-width: 1300px) {
+    .pie-pagina .grupo-1 {
+        grid-template-columns: repeat(1, 1fr); /* Cambiar a una sola columna en pantallas pequeñas */
+        grid-gap: 20px; /* Reducir el espacio entre columnas */
+        padding: 20px 0px; /* Reducir el relleno */
+    }
+
+    .pie-pagina .grupo-1 .box figure img {
+        width: 35%; /* Ajustar el ancho de la imagen al contenedor */
+        height: auto; /* Mantener la proporción */
+        margin-left: 0; /* Eliminar el margen izquierdo */
+    }
+
+    .pie-pagina .grupo-1 .box {
+        text-align: center; /* Centrar el contenido */
+    }
+
+    .pie-pagina .grupo-1 .direccion a {
+        margin-top: 10px; /* Reducir el margen superior */
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .pie-pagina .grupo-1 {
+        grid-template-columns: repeat(1, 1fr); /* Cambiar a una sola columna en pantallas pequeñas */
+        grid-gap: 20px; /* Reducir el espacio entre columnas */
+        padding: 20px 0px; /* Reducir el relleno */
+    }
+
+    .pie-pagina .grupo-1 .box figure img {
+        width: 35%; /* Ajustar el ancho de la imagen al contenedor */
+        height: auto; /* Mantener la proporción */
+        margin-left: 0; /* Eliminar el margen izquierdo */
+    }
+
+    .pie-pagina .grupo-1 .box {
+        text-align: center; /* Centrar el contenido */
+    }
+
+    .pie-pagina .grupo-1 .direccion a {
+        margin-top: 10px; /* Reducir el margen superior */
+    }
+}
+
+@media (max-width: 951px){
+    .twitter-icon {
+        width: 18px; 
+        height: auto;
+        background-color: white;
+        margin-bottom: 8px;
+        margin-left: 3px;
+    }
+}
