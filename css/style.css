@@ -18,25 +18,25 @@ body {
     
 
     .poppins-regular {
-        font-family: "Poppins", sans-serif;
+        font-family: Arial;
         font-weight: 400;
         font-style: normal;
     }
 
     .poppins-medium {
-        font-family: "Poppins", sans-serif;
+        font-family: Arial;
         font-weight: 500;
         font-style: normal;
     }
 
     .poppins-semibold {
-        font-family: "Poppins", sans-serif;
+        font-family: Arial;
         font-weight: 600;
         font-style: normal;
     }
 
     .poppins-bold {
-        font-family: "Poppins", sans-serif;
+        font-family: Arial;
         font-weight: 700;
         font-style: normal;
     }
@@ -48,7 +48,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(1, 1, 1, 0.9);
+    background-color: #4c1e7e;
     padding: 0px 10%;
     display: flex;
     align-items: center;
@@ -56,6 +56,10 @@ body {
     z-index: 1000;
 }
 /* Estilos para el logotipo */
+/* .logo img {
+    width: 300px;
+    height: 70px;
+} */
 .logo {
     font-size: 25px;
     text-transform: uppercase;
@@ -82,7 +86,7 @@ body {
 }
 
 .header .navigation ul li a:hover {
-    background-color: red;
+    background-color: #6d3e8c;
 }
 
 .header .navigation ul li ul {
@@ -180,6 +184,67 @@ body {
         padding: 20px 2%;
     }
 }
+
+/*blog . main content*/
+.main-content {
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+article h2 {
+    margin-top: 0;
+}
+
+/*end blog . main content*/
+
+/*texto del slider*/
+.caption {
+	color: white;
+	text-shadow: 1px 1px black;
+	font-size: 8vw;
+	position: absolute;
+	bottom: 8vw;
+	right: 4vw;
+    text-align: center; /* centrar texto */
+}
+/*fin texto del slider*/
+
+/* team members */
+.team {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.team-member {
+    text-align: center;
+    margin: 20px;
+}
+
+.team-member img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    margin: 5px 0;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* fin team members */
+
 /* Estilos para la sección de hero */
 .hero {
     min-height: 100vh;
@@ -253,8 +318,8 @@ i {
 }
 
 .logos {
-    width: 50px;
-    height: 50px;
+    width: 300px;
+    height: 70px;
 
 }
 

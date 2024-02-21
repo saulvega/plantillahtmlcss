@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UES</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/proyecto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header class="header">
+        <!-- menú superior -->
+        <div class="logo"><img src="../images/ues.png" alt="logo" class="logos"></div>
+        <div class="logo"><img src="../images/ues.png" alt="logo" class="logos"></div>
+        <div class="logo"><img src="../images/ues.png" alt="logo" class="logos"></div>
+        <input type="checkbox" id="toggle">
+        <label for="toggle"><img class="menu" src="../images/menu.png" alt="menu"></label>
+        <nav class="navigation">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="proyecto.html">Descripción del proyecto</a></li>
+                <li><a href="investigadores.html">Investigadores</a></li>
+                <li><a href="#">Multimedia</a>
+                    <ul>
+                        <li><a href="../multimedia/videos.html">Videos</a></li>
+                        <li><a href="../multimedia/fotos.html">Galeria de fotos</a></li>
+                    </ul>
+                </li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="archivo.html">Archivos</a></li>
+                <div class="contenedor">
+                    <a href="https://www.youtube.com/@TVUES" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/UESoficial.SV" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                            <a href="https://twitter.com/UESoficial" target="_blank" class="twitter-link">
+                                <img src="/images/twitter-x.svg" alt="Twitter" class="twitter-icon">
+                            </a>
+                    <a href="https://www.instagram.com/uesoficial" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="slider_noticias" style="margin-top: 0%; padding-top: 0%;">
+        <div class="containerN">
+            <div class="row">
+                <div id="myCarouselNoticias" class="carousel slide carousel-noticias" data-bs-ride="carousel"
+                    data-bs-interval="5000">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#myCarouselNoticias" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#myCarouselNoticias" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#myCarouselNoticias" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <!-- slider con noticias -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/noticias/noticia.jpg" class="d-block w-100" alt="Noticia 1">
+                            <div class="carousel-container">
+                                <div class="carousel-content">
+                                    <h1>Titulo de la noticia 1</h1>
+                                    <a class="btn btn-light px-5" href="/pages/noticias/1.html">Ver Noticia</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/noticias/noticia0.jpg" class="d-block w-100" alt="Noticia 2">
+                            <div class="carousel-container">
+                                <div class="carousel-content">
+                                    <h1>Titulo de la noticia 2</h1>
+                                    <a class="btn btn-light px-5" href="/pages/noticias/2.html">Ver Noticia</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/noticias/noticia1.avif" class="d-block w-100" alt="Noticia 3">
+                            <div class="carousel-container">
+                                <div class="carousel-content">
+                                    <h1>Titulo de la noticia 3</h1>
+                                    <a class="btn btn-light px-5" href="/pages/noticias/3.html">Ver Noticia</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controles -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarouselNoticias"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarouselNoticias"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- seccion de la descripcion del proyecto-->
+    <section class="main-content">
+        <article>
+            <h2>Título del Artículo 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget odio purus.</p>
+            <a href="#">Leer más</a>
+        </article>
+        <article>
+            <h2>Título del Artículo 2</h2>
+            <p>Integer sit amet velit vel sem dictum fermentum. Ut in orci vitae elit malesuada sodales.</p>
+            <a href="#">Leer más</a>
+        </article>
+        <!-- Puedes añadir más artículos aquí -->
+    </section>
+    <!-- footer -->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="../images/ues.png" alt="logo">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, sed?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, sed?
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, sed?
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, sed?
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, sed?
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, sed?
+                </p>
+            </div>
+            <div class="box">
+                <h2>DIRECCION</h2>
+                <div class="direccion">
+                    <p>Ciudad Universitaria "Dr. Fabio Castillo Figueroa",
+                        Final Avenida "Mártires Estudiantes del 30 julio", San Salvador,
+                        El Salvador, América Central. <br><br><b>Teléfonos: <br>+(503) numero de telefono <br>+(503)
+                            numero de telefono</b></p>
+                    <a href="#">DERECHOS</a>
+                    <a href="contacto.html">CONTACTO</a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>UES</b> - Todos los Derechos Reservados.</small>
+
+        </div>
+    </footer>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

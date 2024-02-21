@@ -21,6 +21,14 @@ let tiempo = setInterval(() => {
     }
 }, 80);
 
+//evita el error "Cannot set properties of null"
+document.addEventListener("DOMContentLoaded", function() {
+    var demoParagraph = document.getElementById("demo");
+    if (demoParagraph !== null) {
+        demoParagraph.textContent = "Este párrafo ha sido modificado con éxito.";
+    }
+});
+
 // Función para observar cuando el elemento está en la pantalla
 function startAnimation(entries, observer) {
     entries.forEach(entry => {
