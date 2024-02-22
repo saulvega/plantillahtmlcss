@@ -204,13 +204,15 @@ article h2 {
 /*texto del slider*/
 .caption {
 	color: white;
-	text-shadow: 1px 1px black;
-	font-size: 8vw;
+	/* text-shadow: 1px 1px black; */
+	font-size: 2vw;
 	position: absolute;
 	bottom: 8vw;
-	right: 4vw;
+	right: 2vw;
     text-align: center; /* centrar texto */
+    
 }
+
 /*fin texto del slider*/
 
 /* team members */
