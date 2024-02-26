@@ -83,6 +83,46 @@ body {
     max-width: 600px; /* Ancho máximo */
 }
 
+
+
+
+
+
+
+/*prueba para album*/
+/* Estilos para la imagen de la primera publicación */
+.post-img-11{
+    background: url(../images/galeria/cultivosguatemala.png);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+/* Estilos para la imagen de la segunda publicación */
+.post-img-22{
+    background: url(../images/galeria/cultivossalvador.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+/* Estilos para la imagen de la tercera publicación */
+.post-img-33{
+    background: url(../images/galeria/cultivoshonduras.webp);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+
+
+
+
+
 /* Media query para pantallas con un ancho máximo de 400px */
 @media screen and (max-width:400px){
     /* Estilo para el título de la galería en dispositivos móviles */
