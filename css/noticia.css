@@ -18,6 +18,8 @@
     text-align: center; /* Alineación del texto */
 }
 
+
+
 /* Estilo para el título dentro del contenido del carrusel */
 .carousel-content h1 {
     margin-bottom: 10px; /* Margen inferior */
@@ -55,6 +57,16 @@
     border-bottom-left-radius: 0; /* Radio de borde de la esquina inferior izquierda */
     border-bottom-right-radius: 0; /* Radio de borde de la esquina inferior derecha */
 }
+
+
+
+
+
+
+
+
+
+
 
 /* Estilos para pantallas más pequeñas */
 @media screen and (max-width: 1280px) {
