@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/proyecto.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
 </head>
@@ -45,54 +46,18 @@
     <div class="container" id="content">
         <div class="row">
             <div class="col-md-8">
-                <h1>Impacto Esperado</h1>
+                <h1>Información de las zonas de impacto</h1>
                 <hr>
-                <ol class="texto">
-                    <li>Fortalecimiento de la resiliencia comunitaria: El proyecto promoverá desde la identificación
-                        y valoración del riesgo agroalimentario comunitario el fortalecimiento de las capacidades de las
-                        comunidades locales tanto de mujeres, hombres y jóvenes para enfrentar los efectos del Cambio
-                        Climático, lo que les permitirá ser más resilientes y estar mejor preparados para enfrentar
-                        futuros eventos climáticos extremos.</li>
-                    <li>Incremento en la seguridad alimentaria y nutricional de las familias: Al mejorar la
-                        productividad agrícola, el proyecto contribuirá a aumentar la disponibilidad y el acceso a
-                        alimentos nutritivos y suficientes para las comunidades locales, lo que mejorará su seguridad
-                        alimentaria y nutricional.</li>
-                    <li>Mejora en la producción agrícola: El proyecto fortalecerá las capacidades de las mujeres,
-                        hombres y jóvenes en el campo para implementar prácticas agrícolas resilientes y adaptativas que
-                        les permitan enfrentar el Cambio Climático; además, se considera como elemento clave el
-                        empoderamiento de las mujeres y jóvenes como partícipes de la cadena agro productiva que mejore
-                        la productividad de los cultivos con la implementación de las propuestas agroecológicas del
-                        proyecto.</li>
-                    <li>Reducción de la pobreza: La mejora en la productividad agrícola con el uso de recursos
-                        locales como los biofertilizantes, labranza mínima, rotación de cultivos entre otras prácticas,
-                        disminuye la dependencia de insumos externos de alto costo, contribuyendo a reducir la pobreza
-                        en las comunidades, lo que será un impacto positivo en la salud y el bienestar económico y
-                        social.</li>
-                    <li>Mejora la capacidad técnica y científica de las y los profesores para establecer estrategias
-                        de abordaje en el Corredor Seco: debido a la acción técnica y científica se mejora la
-                        comprensión de la dinámica del clima, producción, biodiversidad y seguridad alimentaria de las
-                        familias del Corredor Seco.</li>
-                    <li>Implementación de Sistemas de Información: El desarrollo del Sistema de Alerta Temprana
-                        (SIAT), Sitio Web del proyecto y App móvil fundamentado con la aplicación de ArcGIS, se
-                        constituirán en herramientas de apoyo para la planificación, ejecución y monitoreo de las
-                        actividades, así como también en el procesamiento y análisis de indicadores de resultados del
-                        proyecto.</li>
-                    <li>Fortalecimiento de capacidades agroecológicas: En la primera fase se instalarán sistemas
-                        alimentarios resilientes que impactarán en la reducción de las migraciones, y en una segunda
-                        fase se generarán excedentes de productos alimenticios que a través de la comercialización
-                        impactará en el incremento de ingresos familiares.</li>
-                    <li>Incremento de participación de mujeres agricultoras de al menos un 20% en relación con la línea
-                        base que determine el diagnóstico.</li>
-                    <li>Desarrollo de Capacidades de Tecnología e Innovación (CTI): Fortalecer las CTI con las
-                        plataformas digitales desarrolladas en el proyecto, para empoderar a las mujeres, hombres y
-                        jóvenes beneficiarios, como parte de las estrategias para contribuir con los ODS descritos en
-                        esta propuesta.</li>
-                    <li>Fortalecimiento de la Red Regional de Investigadores en Seguridad Alimentaria y Nutricional:
-                        La Red debe facilitar el intercambio de conocimientos y experiencias entre los investigadores de
-                        la región, para que puedan trabajar en proyectos de investigación conjuntos, intercambiar
-                        recursos y desarrollar habilidades.</li>
-                </ol>
-                <p class="texto"></p>
+                <p class="texto">Las comunidades directamente beneficiadas con el proyecto fueron seleccionadas
+                    considerando los criterios de pertenecer o estar incluida en el Corredor Seco de los países de
+                    implementación. Manifestar vulnerabilidad socioeconómica en sus sistemas de producción agropecuaria
+                    de alimentos y ser amenazadas por los efectos Negativos del Cambio Climático, además de tener
+                    significativa población de mujeres y joven. A continuación, se describen.</p>
+                
+                     
+                      
+                                 
+                
             </div>
             <div class="col-md-4">
                 <div class="input-box">
@@ -153,9 +118,24 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="../js/script.js"></script>
-    <script src="../js/buscar.js"></script>
+    
+    <script src="../js/tabs.js"></script>
     <!-- script buscar -->
-
+    <script>
+        function openCity(evt, cityName) {
+          var i, x, tablinks;
+          x = document.getElementsByClassName("city");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" w3-border-indigo", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.firstElementChild.className += " w3-border-indigo";
+        }
+        </script>
 </body>
 
 </html>
