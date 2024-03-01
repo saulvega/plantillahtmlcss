@@ -14,7 +14,7 @@
     width: 100%; /* Ancho */
     height: 2px; /* Altura */
     position: absolute; /* Posición absoluta */
-    background-color: #b00404; /* Color de fondo */
+    background-color: #6d3e8c; /* Color de fondo */
     top: 50%; /* Posicionamiento desde la parte superior */
     z-index: -1; /* Índice z */
 }
@@ -22,7 +22,12 @@
 /* Estilo para la parte resaltada del título de la galería */
 .galeria-titulo span {
     padding: 0 15px; /* Relleno */
-    background-color: #b00404; /* Color de fondo */
+    background-color: #4c1e7e; /* Color de fondo */
+    border-radius: 0.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 /* Estilo para el cuerpo del documento */
