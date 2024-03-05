@@ -1,6 +1,7 @@
 /* Estilo para el contenedor principal de archivos */
 .archivo-main{
 margin-top: 0px;
+margin-bottom: 2rem;
 }
 /* Estilo para la selección de texto */
 ::selection{
@@ -123,7 +124,7 @@ margin-top: 0px;
     justify-content: center;
     align-items: center;
     column-gap: 1.5rem;
-    margin-top: 2rem !important;
+    margin-top: -2rem !important;
 }
 /* Estilo para los elementos del filtro de publicaciones */
 .filter-item{
@@ -133,7 +134,7 @@ margin-top: 0px;
 }
 /* Estilo para el filtro activo */
 .active-filter{
-    background: var(--second-color);
+    background: #6d3e8c;
     color: var(--bg-color);
     padding: 4px 10px;
     border-radius: 4px;

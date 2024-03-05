@@ -1,18 +1,16 @@
-function openTab(evt, tabName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
-  
-  // Open default tab on page load
-  document.getElementById("Guatemala").style.display = "block";
-  document.getElementsByClassName("tablinks")[0].className += " active";
+
+  // Esto activa los botones de pestaña
+  var tabTriggerList = document.querySelectorAll('[data-bs-toggle="tab"]');
+  tabTriggerList.forEach(function (tabTrigger) {
+    tabTrigger.addEventListener('click', function (event) {
+      event.preventDefault();
+      var tabTarget = document.querySelector(tabTrigger.getAttribute('data-bs-target'));
+      var tabPaneList = document.querySelectorAll('.tab-pane');
+      tabPaneList.forEach(function (tabPane) {
+        tabPane.classList.remove('show', 'active');
+      });
+      tabTarget.classList.add('show', 'active');
+    });
+  });
+
   
