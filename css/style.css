@@ -127,6 +127,24 @@ th {
     background-color: #6d3e8c;
 }
 
+/*btn-news*/
+.btn-new {
+    text-decoration: none;
+    background-color: #4c1e7e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 0.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.btn-new:hover {
+    background-color: #6d3e8c;
+}
 .step .content {
     text-align: center;
     /* Alinear contenido al centro */
@@ -876,6 +894,7 @@ i {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     padding: 45px 0px;
+    margin-top: 28px;
 }
 
 /* Estilos para las cajas en el pie de página */
