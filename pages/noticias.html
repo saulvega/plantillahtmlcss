@@ -4,13 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=800, initial-scale=0.5, maximum-scale=1.0, user-scalable=yes">
-    <title>UES</title>
+    <title>PROYECTO 7-GT</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/noticias.css">
-    <link rel="stylesheet" href="../css/slide.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
     <link rel="icon" href="../images/favicon.png">
+    <style>
+        .image-container {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            margin-top: 30px;
+        }
+
+        .description {
+            padding: 20px;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -25,8 +41,8 @@
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../pages/acercade.html">Proyecto</a></li>
                 <li><a href="../pages/consorcio.html">RRDISAN</a></li>
-                <li><a href="../pages/galeria.html">Galería</a>
-                    <!-- Submenú de Multimedia -->
+                <!-- <li><a href="../pages/galeria.html">Galería</a>
+                    Submenú de Multimedia -->
                     <!-- <ul>
                         <li><a href="#">Guatemala</a></li>
                         <li><a href="#">Honduras</a></li>
@@ -34,7 +50,7 @@
                     </ul> -->
                 </li>
                 <li><a href="../pages/noticias.html">Noticias</a></li>
-                <li><a href="../pages/archivo.html">Archivos</a></li>
+                <!--<li><a href="../pages/archivo.html">Archivos</a></li>-->
                 <li><a href="../pages/contacto.html">Contacto</a></li>
 
 
@@ -42,219 +58,89 @@
             </ul>
         </nav>
     </header>
-    <!-- seccion de noticias -->
-    <section class="containerNoticias">
-        <div class="containerNot">
-            <hr>
-            
-            <header class="showcase">
-                <h2  class="animado">Noticias de Mayor Impacto!</h2>
-                <p class="texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit.!</p>
-                <a href="../noticias/1.html" class="btn">
-                    Ver más <i class="fas fa-chevron-right"></i>
-                </a>
-            </header>
-
-            
-            <div class="news-cards">
+    <!-- seccion de la descripcion del proyecto-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
                 <div class="image-container">
-                    <img src="../images/noticias/milpacuatro.jpg" alt="" />
-                    <h3>Lorem, ipsum dolor,,,,,.</h3>
-                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis
-                        nesciunt minima
-                        doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt
-                        asperiores fuga?
-                    </p>
-                    <a href="../noticias/1.html">Ver más  <i class="fas fa-angle-double-right"></i></a>
-                </div>
-                
-
-                    <div class="image-container">
-                    <img src="../images/noticias/milpacinco.jpg" alt="" />
-                    <h3>Lorem, ipsum dolor.</h3>
-                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis
-                        nesciunt minima
-                        doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt
-                        asperiores fuga?
-                    </p>
-                    <a href="../noticias/1.html">Ver más  <i class="fas fa-angle-double-right"></i></a>
-                </div>
-
-
-                <div class="image-container">
-                    <img src="../images/noticias/milpatres.jpg" alt="" />
-                    <h3>Lorem, ipsum dolor.......</h3>
-                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis
-                        nesciunt minima
-                        doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt
-                        asperiores fuga?
-                    </p>
-                    <a href="../noticias/1.html">Ver más  <i class="fas fa-angle-double-right"></i></a>
-                </div>
-
-
-
-                <div class="image-container">
-                    <img src="../images/noticias/milpados.jpg" alt="" />
-                    <h3>Lorem, ipsum dolor.</h3>
-                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis
-                        nesciunt minima
-                        doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt
-                        asperiores fuga?
-                    </p>
-                    <a href="../noticias/1.html">Ver más  <i class="fas fa-angle-double-right"></i></a>
+                    <img src="../images/noticias/Guatemala.png" alt="Imagen 1">
+                    <div class="description">
+                        <p>Informate de las actividades en</p>
+                        <a href="#" class="btn-new">Guatemala >></a>
+                    </div>
                 </div>
             </div>
-
-            <section class="cards-banner-one">
-                <div class="content">
-                    <div class="bg-blue text-white p-3 mb-3">
-                        <h2 style="color: palegreen;">Lorem, ipsum dolo..r.</h2>
-                    </div>
-                    
-                
-                    <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat maxime facilis quasi alias
-                        illo, fugiat
-                        cupiditate porro dolores tenetur delectus!</p>
-                    <a href="../noticias/1.html" class="btn">Ver más <i class="fas fa-chevron-right"></i></a>
-                </div>
-            </section>
-
-            
-            <div class="news-cards">
-
+            <div class="col-md-4">
                 <div class="image-container">
-                    <img src="../images/noticias/milpaseis.webp" alt="" />
-                    <h3>Lorem, ipsum dolor.</h3>
-                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis
-                        nesciunt minima
-                        doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt
-                        asperiores fuga?
-                    </p>
-                    <a href="../noticias/1.html">Ver más  <i class="fas fa-angle-double-right"></i></a>
-                </div>
-
-
-                <div class="image-container">
-                    <img src="../images/noticias/milpacuatro.jpg" alt="" />
-                    <h3>Lorem, ipsum dolor.</h3>
-                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis
-                        nesciunt minima
-                        doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt
-                        asperiores fuga?
-                    </p>
-                    <a href="../noticias/1.html">Ver más  <i class="fas fa-angle-double-right"></i></a>
-                </div>
-
-
-                <div class="image-container">
-                    <img src="../images/noticias/milpatres.jpg" alt="" />
-                    <h3>Lorem, ipsum dolor.</h3>
-                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis
-                        nesciunt minima
-                        doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt
-                        asperiores fuga?
-                    </p>
-                    <a href="../noticias/1.html">Ver más  <i class="fas fa-angle-double-right"></i></a>
-                </div>
-
-
-                <div class="image-container">
-                    <img src="../images/noticias/milpa.jpg" alt="" />
-                    <h3>Lorem, ipsum dolor.</h3>
-                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis
-                        nesciunt minima
-                        doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt
-                        asperiores fuga?
-                    </p>
-                    <a href="../noticias/1.html">Ver más  <i class="fas fa-angle-double-right"></i></a>
-                </div>
-             </div>
-
-            
-            <!-- <section class="cards-banner-two">
-                <div class="content">
-                    <div class="bg-blue text-white p-3 mb-3">
-                        <h2 style="color: palegreen;">Lorem, ipsum dolo..r.</h2>
-                    </div>
-                    
-                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut qui laudantium id quam magni
-                        accusantium,
-                        veritatis, ipsam labore, reprehenderit dolore repudiandae nemo sint deserunt! Suscipit facilis
-                        qui inventore
-                        consequatur fugit.</p>
-                    <a href="../pages/noticias/9.html" class="btn">Ver más  <i class="fas fa-chevron-right"></i></a>
-
-                </div>
-            </section> -->
-
-            <section class="">
-                <div class="content">
-                    <h2>Trabajo de campo en las comunidades</h2>
-                    <div class="video-container">
-                        <video controls style="max-width: 40%; height: auto;">
-                            <source src="../multimedia/video/video1.mp4" type="video/mp4">
-                            Tu navegador no admite el elemento <code>video</code>.
-                        </video>
-                        <div class="description">
-                            <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis
-                                nesciunt minima
-                                doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt
-                                asperiores fuga?Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis
-                                nesciunt minima
-                                doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt
-                                asperiores fuga?</p>
-                        </div>
+                    <img src="../images/noticias/ElSalvador.png" alt="Imagen 2">
+                    <div class="description">
+                        <p>Informate de las actividades en</p>
+                        <a href="../noticias/08052024.html" class="btn-new">El Salvador >></a>
                     </div>
                 </div>
-            </section>
- </div>
-    </section>
-   <br/>
-   <footer class="pie-pagina">
-    <div class="grupo-1">
-        <div class="box">
-            <figure>
-                <a href="#">
-                    <!-- Imagen de algun logo -->
-                    <img src="../images/isologoidrccsuca.png" alt="logo">
-                </a>
-            </figure>
-        </div>
-        <div class="box">
-            <h2>CSUCA-IDRC</h2>
-            <!-- agregar informacion -->
-
-            <P>Proyecto: Fortaleciendo sistemas inclusivos de ciencia e innovación en América Latina a través de una
-                red de investigación colaborativa</P>
-            <a href="https://csuca.org/es/idrc-csuca/" target="_blank" class="more-info-btn">Más Información</a>
-
-        </div>
-        <div class="box">
-            <h2>PROYECTO 7-GT</h2>
-            <div class="direccion">
-                <!-- coregir informacion y agregar si es necesario -->
-                <p>Fortalecimiento de la Gestión del Riesgo en Sistemas Agroalimentarios que Contribuyen a la
-                    Seguridad
-                    Alimentaria y Nutricional para Enfrentar el Cambio Climático en el Corredor Seco de Guatemala,
-                    El
-                    Salvador y Honduras 2023-2025</p>
-                <a href="https://csuca.org/es/category/noticias-idrc-7gt/" target="_blank">CSUCA-IDRC</a>
-                <a href="pages/contacto.html">CONTACTO</a>
+            </div>
+            <div class="col-md-4">
+                <div class="image-container">
+                    <img src="../images/noticias/Honduras.png" alt="Imagen 3">
+                    <div class="description">
+                        <p>Informate de las actividades en</p>
+                        <a href="#" class="btn-new">Honduras >></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="grupo-2">
-        <!-- camabiar los derechos a los reales -->
-        <small>&copy; 2024 <b>IDRC-CSUCA</b> - Todos los Derechos Reservados.</small>
+    <!-- seccion de la descripcion del proyecto-->
+    <!-- footer -->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <!-- Imagen de algun logo -->
+                        <img src="../images/isologoidrccsuca.png" alt="logo">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>CSUCA-IDRC</h2>
+                <!-- agregar informacion -->
 
-    </div>
-</footer>
-    <script src="https://kit.fontawesome.com/2861e59bd2.js" crossorigin="anonymous"></script>
+                <P>Proyecto: Fortaleciendo sistemas inclusivos de ciencia e innovación en América Latina a través de una
+                    red de investigación colaborativa</P>
+                <a href="https://csuca.org/es/idrc-csuca/" target="_blank" class="more-info-btn">Más Información</a>
+
+            </div>
+            <div class="box">
+                <h2>PROYECTO 7-GT</h2>
+                <div class="direccion">
+                    <!-- coregir informacion y agregar si es necesario -->
+                    <p>Fortalecimiento de la Gestión del Riesgo en Sistemas Agroalimentarios que Contribuyen a la
+                        Seguridad
+                        Alimentaria y Nutricional para Enfrentar el Cambio Climático en el Corredor Seco de Guatemala,
+                        El
+                        Salvador y Honduras 2023-2025</p>
+                    <a href="https://csuca.org/es/category/noticias-idrc-7gt/" target="_blank">CSUCA-IDRC</a>
+                    <a href="pages/contacto.html">CONTACTO</a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <!-- camabiar los derechos a los reales -->
+            <small>&copy; 2024 <b>IDRC-CSUCA</b> - Todos los Derechos Reservados.</small>
+
+        </div>
+    </footer>
+    <!--Scrips-->
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+
+    <!-- script buscar -->
+
 </body>
 
 </html>
