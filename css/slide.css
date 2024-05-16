@@ -6,8 +6,7 @@
 }
 /* Estilos para las imágenes dentro de los elementos del carrusel */
 .carousel .carousel-inner .carousel-item img {
-    height: 600px; 
-    width: 100%; 
+    height: 490px; 
     object-fit: cover; 
 }
 
